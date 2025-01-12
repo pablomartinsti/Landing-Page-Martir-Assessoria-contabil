@@ -9,7 +9,6 @@ export const Container = styled.div`
 `;
 export const Img = styled.img`
   width: 100vw;
-  height: 100vh;
   position: absolute;
   z-index: -1;
   filter: brightness(0.2);

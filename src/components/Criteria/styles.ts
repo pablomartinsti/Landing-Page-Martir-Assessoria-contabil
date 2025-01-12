@@ -6,33 +6,66 @@ export const Container = styled.div`
   align-items: center;
   width: 100vw;
   background-color: #27272b;
-  padding: 100px 0;
+  padding: 50px 0;
+
+  /* Responsividade para o container */
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
 `;
 
 export const Main = styled.div`
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-between;
+  padding: 100px 0;
+  align-items: center;
+  gap: 40px;
+
   img {
     width: 450px;
     height: auto;
+    margin: 50px 0;
     border-radius: 40px;
-  }
 
-  .title {
-    margin-bottom: 50px;
-    h1 {
-      color: #ffe14d;
-      text-align: start;
-      font-size: 50px;
-      line-height: 1.5;
+    /* Responsividade para imagem */
+    @media (max-width: 768px) {
+      width: 300px;
+    }
+    @media (max-width: 480px) {
+      width: 200px;
     }
   }
+
+  h1 {
+    margin-bottom: 50px;
+    color: #ffe14d;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.5;
+    white-space: pre-line;
+
+    /* Responsividade para o título */
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
+  }
+
+  /* Ajuste de layout para telas menores */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
   color: #d7d4cc;
+  justify-content: space-between;
+  align-items: center;
 
   .card {
     width: 560px;
@@ -42,16 +75,45 @@ export const Box = styled.div`
     padding: 20px 10px;
     text-align: center;
     line-height: 1.7;
-    margin: 10px;
-    h4 {
+    margin: 20px;
+
+    /* Responsividade para cartões */
+    @media (max-width: 768px) {
+      width: 90%;
+      height: auto;
+      margin: 15px 0;
+    }
+    @media (max-width: 480px) {
+      width: 87%;
+    }
+
+    h2 {
       font-weight: bold;
       font-size: 22px;
       margin: 10px 0;
+      text-decoration: underline;
+
+      /* Responsividade para subtítulos */
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
     }
-    p {
+
+    h3 {
       font-weight: 300;
       font-size: 18px;
       margin: 20px 0;
+
+      /* Responsividade para textos */
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media (max-width: 480px) {
+        font-size: 14px;
+      }
     }
   }
 `;

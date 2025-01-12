@@ -9,19 +9,13 @@ function Tips() {
       <Img src={foto} />
       <Main>
         <Box>
-          <div className="title">
+          <div>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              Dicas Essenciais para Evitar Problemas{" "}
-            </motion.h1>
-            <motion.h1
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
+              Dicas Essenciais para Evitar Problemas{"\n"}
               com a Receita Federal
             </motion.h1>
           </div>
@@ -33,11 +27,11 @@ function Tips() {
           >
             <AiFillCaretDown size={100} color=" #d7d4cc;" />
             <div>
-              <h4>Declare seus rendimentos corretamente</h4>
-              <p>
+              <h2>Declare seus rendimentos corretamente</h2>
+              <h3>
                 Informe todos os seus rendimentos no imposto de renda, incluindo
                 salários, rendimentos de investimentos e outros ganhos.
-              </p>
+              </h3>
             </div>
           </motion.div>
           <motion.div
@@ -48,11 +42,11 @@ function Tips() {
           >
             <AiFillCaretDown size={100} color=" #d7d4cc;" />
             <div>
-              <h4>Mantenha seus registros financeiros organizados</h4>
-              <p>
+              <h2>Mantenha seus registros financeiros organizados</h2>
+              <h3>
                 Documente todas as suas transações financeiras e guarde os
                 comprovantes de forma organizada, para facilitar a fiscalização.
-              </p>
+              </h3>
             </div>
           </motion.div>
           <motion.div
@@ -63,11 +57,11 @@ function Tips() {
           >
             <AiFillCaretDown size={100} color=" #d7d4cc;" />
             <div>
-              <h4>Busque orientação profissional</h4>
-              <p>
+              <h2>Busque orientação profissional</h2>
+              <h3>
                 Contate um contador ou consultor fiscal para garantir que suas
                 obrigações fiscais estão sendo cumpridas corretamente.
-              </p>
+              </h3>
             </div>
           </motion.div>
           <motion.div
@@ -78,12 +72,12 @@ function Tips() {
           >
             <AiFillCaretDown size={100} color=" #d7d4cc" />
             <div>
-              <h4>Fique atento às mudanças nas legislações</h4>
-              <p>
+              <h2>Fique atento às mudanças nas legislações</h2>
+              <h3>
                 A Receita Federal constantemente atualiza suas normas e
                 procedimentos, por isso é importante se manter informado sobre
                 as mudanças.
-              </p>
+              </h3>
             </div>
           </motion.div>
         </Box>

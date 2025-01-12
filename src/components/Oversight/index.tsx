@@ -1,24 +1,19 @@
 import { motion } from "framer-motion";
+
 import { Container } from "./styles";
 
 function Oversight() {
   return (
     <Container>
       <main>
-        <div className="title">
+        <div>
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Nova Fiscalização da Receita Federal{" "}
-          </motion.h1>
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            a Partir de 2025
+            Receita Federal: Nova Fiscalização Entra{"\n"}
+            em Vigor em 2025
           </motion.h1>
         </div>
         <div className="description">
@@ -28,10 +23,10 @@ function Oversight() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
-              A partir de janeiro de 2025, a Receita Federal intensificou seu
-              monitoramento de transações financeiras, incluindo operações em
-              conta corrente, investimentos e pagamentos online. O objetivo é
-              combater a sonegação fiscal e garantir a justiça tributária.
+              Em janeiro de 2025, a Receita Federal iniciou um monitoramento
+              mais rigoroso de transações financeiras, como movimentações em
+              contas correntes, investimentos e pagamentos online. A meta é
+              combater a sonegação fiscal e promover justiça tributária.
             </motion.p>
           </div>
           <div>

@@ -6,11 +6,21 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
+
+  @media (max-width: 480px) {
+    min-height: 135vh;
+  }
 `;
 
 export const Section = styled.div`
-  width: 1200px;
+  max-width: 1200px;
+
+  /* Ajuste para telas menores */
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
 `;
+
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,37 +28,78 @@ export const Main = styled.div`
   height: 100vh;
 
   .title {
-    margin: 50px 0;
-  }
-  h1 {
     color: #ffe14d;
     text-align: start;
-    font-size: 50px;
+    font-size: 30px;
+    white-space: pre-line;
+    line-height: 1.7;
+
+    @media (max-width: 1200px) {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
   }
 `;
+
 export const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   .card {
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
     background: #46464a;
-    margin: 0 25px;
+    margin: 10px;
     border-radius: 20px;
     padding: 20px;
     color: #d7d4cc;
-    h4 {
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 1.5;
-      margin: 20px 0;
+
+    @media (max-width: 1200px) {
+      width: 340px;
+      height: 360px;
     }
-    p {
-      font-size: 20px;
+    @media (max-width: 480px) {
+      width: 280px;
+      height: 250px;
+    }
+    h2 {
+      font-weight: bold;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      text-decoration: underline;
+
+      /* Responsividade para subtítulos */
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+
+    h3 {
       font-weight: 300;
-      line-height: 1.5;
+      line-height: 1.7;
+      font-size: 18px;
+
+      /* Responsividade para textos */
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (max-width: 480px) {
+        font-size: 12px;
+      }
     }
   }
 `;
@@ -59,4 +110,12 @@ export const Img = styled.img`
   z-index: -1;
   position: absolute;
   filter: brightness(0.2);
+
+  /* Ajuste para telas menores */
+  @media (max-width: 768px) {
+    height: auto;
+  }
+  @media (max-width: 480px) {
+    height: 135vh;
+  }
 `;

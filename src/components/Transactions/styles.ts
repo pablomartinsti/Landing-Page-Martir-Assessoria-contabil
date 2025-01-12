@@ -10,59 +10,124 @@ export const Container = styled.div`
     height: auto;
     margin: 50px 0;
     border-radius: 40px;
+
+    /* Responsividade para imagens */
+    @media (max-width: 768px) {
+      width: 300px;
+    }
+    @media (max-width: 480px) {
+      width: 200px;
+    }
   }
 `;
+
 export const Main = styled.div`
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   padding: 100px 0;
+
+  /* Ajuste para telas menores */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+  }
 `;
 
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: #d7d4cc;
-  .title {
+
+  h1 {
     margin: 50px 0;
     color: #ffe14d;
-    line-height: 1.5;
-    font-size: 25px;
+    line-height: 1.7;
+    font-size: 50px;
+    white-space: pre-line;
+
+    /* Responsividade para títulos */
+    @media (max-width: 768px) {
+      font-size: 40px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
   }
+
   .box {
     display: flex;
     margin-bottom: 50px;
+
+    /* Ajuste para telas menores */
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
+
   .cards {
-    width: 600px;
-    height: 160px;
+    width: 660px;
+    height: auto;
     border: 1px solid rgba(215, 212, 204, 0.5);
     border-radius: 40px;
     padding: 10px 10px;
-    text-align: center;
-    line-height: 1.7;
+    line-height: 1.5;
     margin-bottom: 50px;
+    text-align: center;
+
+    /* Responsividade para cards */
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
+
   .card {
-    width: 300px;
-    height: 300px;
+    width: 330px;
+    height: auto;
     border: 1px solid rgba(215, 212, 204, 0.5);
     border-radius: 40px;
-    padding: 5px 10px;
+    padding: 10px;
+    line-height: 1.5;
     text-align: center;
-    line-height: 1.7;
     margin: 0 10px;
+
+    /* Ajuste para telas menores */
+    @media (max-width: 768px) {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
-  h4 {
+
+  h2 {
     font-weight: bold;
-    font-size: 22px;
     text-decoration: underline;
-    margin: 10px 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+    /* Responsividade para subtítulos */
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
-  p {
+
+  h3 {
     font-weight: 300;
     font-size: 18px;
+
+    /* Responsividade para textos */
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 `;

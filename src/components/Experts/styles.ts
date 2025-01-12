@@ -8,10 +8,15 @@ export const Container = styled.div`
   background-color: #27272b;
   padding: 100px 0;
   border-bottom: 1px solid #d7d4cc;
+
+  /* Responsividade para o container */
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
 `;
 
 export const Main = styled.div`
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
 
@@ -20,17 +25,43 @@ export const Main = styled.div`
     height: auto;
     margin: 50px 0;
     border-radius: 40px;
-  }
 
-  .title {
-    margin: 50px 0;
-    h1 {
-      color: #ffe14d;
-      text-align: start;
-      font-size: 50px;
+    /* Responsividade para imagem */
+    @media (max-width: 768px) {
+      width: 300px;
+      margin: 30px 0;
+    }
+    @media (max-width: 480px) {
+      width: 200px;
     }
   }
+
+  h1 {
+    margin: 50px 0;
+    color: #ffe14d;
+    text-align: start;
+    font-size: 50px;
+    line-height: 1.5;
+    white-space: pre-line;
+
+    /* Responsividade para o título */
+    @media (max-width: 768px) {
+      font-size: 40px;
+      text-align: center;
+    }
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
+  }
+
+  /* Ajuste para layout geral */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
 `;
+
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,7 +69,14 @@ export const Box = styled.div`
 
   .box-card {
     display: flex;
+
+    /* Responsividade para cartões */
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
+
   .card {
     width: 300px;
     height: 300px;
@@ -48,15 +86,44 @@ export const Box = styled.div`
     text-align: center;
     line-height: 1.7;
     margin: 20px 10px;
-    h4 {
+
+    /* Responsividade para os cartões */
+    @media (max-width: 768px) {
+      width: 90%;
+      height: auto;
+      margin: 10px 0;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+    h2 {
       font-weight: bold;
       font-size: 22px;
       margin: 10px 0;
+      text-decoration: underline;
+
+      /* Responsividade para subtítulos */
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+      @media (max-width: 480px) {
+        font-size: 18px;
+      }
     }
-    p {
+
+    h3 {
       font-weight: 300;
       font-size: 18px;
       margin: 20px 0;
+
+      /* Responsividade para textos */
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media (max-width: 480px) {
+        font-size: 14px;
+      }
     }
   }
 `;

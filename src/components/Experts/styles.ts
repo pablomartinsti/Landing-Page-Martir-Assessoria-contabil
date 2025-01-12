@@ -32,7 +32,7 @@ export const Main = styled.div`
       margin: 30px 0;
     }
     @media (max-width: 480px) {
-      width: 200px;
+      width: 80%;
     }
   }
 

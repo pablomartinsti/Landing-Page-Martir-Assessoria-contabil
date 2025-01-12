@@ -5,18 +5,17 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 `;
 export const Img = styled.img`
   width: 100vw;
-  height: auto;
+  height: 100vh;
   position: absolute;
   z-index: -1;
   filter: brightness(0.2);
 `;
 export const Main = styled.div`
   width: 1200px;
-  height: auto;
 `;
 export const Box = styled.div`
   .title {

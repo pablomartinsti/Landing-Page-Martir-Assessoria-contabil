@@ -19,7 +19,7 @@ export const Img = styled.img`
   position: absolute;
   z-index: -1;
   filter: brightness(0.2);
-  min-height: 130vh;
+  min-height: 170vh;
 `;
 
 export const Main = styled.div`

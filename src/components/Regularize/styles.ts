@@ -8,7 +8,7 @@ export const Container = styled.div`
   width: 100vw;
 
   @media (max-width: 480px) {
-    min-height: 135vh;
+    min-height: 150vh;
   }
 `;
 
@@ -116,6 +116,6 @@ export const Img = styled.img`
     height: auto;
   }
   @media (max-width: 480px) {
-    height: 135vh;
+    height: 150vh;
   }
 `;

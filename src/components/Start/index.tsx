@@ -14,8 +14,8 @@ function Star() {
             transition={{ duration: 1 }}
           >
             Receita Federal em Ação:{"\n"}
-            Esteja 100% em Conformidade com{"\n"}
-            Suas Transações Financeiras
+            Garanta 100% em Conformidade {"\n"}
+            com Suas Transações Financeiras
           </motion.h1>
 
           <motion.h2

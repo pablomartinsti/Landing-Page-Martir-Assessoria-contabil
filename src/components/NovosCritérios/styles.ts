@@ -24,7 +24,6 @@ export const Main = styled.div`
   img {
     width: 450px;
     height: auto;
-
     border-radius: 40px;
 
     /* Responsividade para imagem */

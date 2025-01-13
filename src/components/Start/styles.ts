@@ -93,7 +93,7 @@ export const Box = styled.div`
     text-decoration: none;
     color: black;
     transition: background-color 0.5s;
-    max-width: 400px;
+    max-width: 600px;
 
     &:hover {
       background-color: white;

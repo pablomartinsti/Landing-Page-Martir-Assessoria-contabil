@@ -18,13 +18,13 @@ export const Main = styled.div`
   max-width: 1200px;
   display: flex;
   padding: 100px 0;
-  align-items: center;
+
   gap: 40px;
 
   img {
     width: 450px;
     height: auto;
-    margin: 50px 0;
+
     border-radius: 40px;
 
     /* Responsividade para imagem */

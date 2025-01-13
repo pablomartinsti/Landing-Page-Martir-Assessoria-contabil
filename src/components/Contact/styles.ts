@@ -174,6 +174,7 @@ export const Container = styled.div`
         padding: 15px;
         background-color: #ffe14d;
         margin-top: 50px;
+        text-align: center;
 
         /* Ajuste para dispositivos menores */
         @media (max-width: 480px) {

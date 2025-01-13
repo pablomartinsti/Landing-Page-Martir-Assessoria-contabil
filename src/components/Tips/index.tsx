@@ -1,6 +1,6 @@
 import { Container, Img, Main, Box } from "./styles";
 import { motion } from "framer-motion";
-import foto from "../../assets/foto5.jpg";
+import foto from "../../assets/Dicas-Essenciais.jpg";
 import { AiFillCaretDown } from "react-icons/ai";
 
 function Tips() {

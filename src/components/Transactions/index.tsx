@@ -1,6 +1,6 @@
 import { Container, Main, Section } from "./styles";
 import { motion } from "framer-motion";
-import perfil from "../../assets/perfil.jpg";
+import foto from "../../assets/Monitoramento-Rigoroso-de-Transações-Financeiras.jpg";
 
 function Transactions() {
   return (
@@ -63,7 +63,7 @@ function Transactions() {
           </motion.div>
         </Section>
         <motion.img
-          src={perfil}
+          src={foto}
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.1, delay: 0.7 }}

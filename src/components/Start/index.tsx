@@ -1,11 +1,11 @@
 import { Container, Img, Main, Box } from "./styles";
 import { motion } from "framer-motion";
-import backgorund from "../../assets/backgorund.png";
+import foto from "../../assets/receita-federal-regularizacao.png";
 import Modal from "../modal";
 function Star() {
   return (
     <Container>
-      <Img src={backgorund} alt="Background" />
+      <Img src={foto} alt="Background" />
       <Main>
         <Box>
           <motion.h1

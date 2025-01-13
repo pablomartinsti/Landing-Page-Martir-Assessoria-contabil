@@ -1,6 +1,6 @@
 import { Container, Main, Box } from "./styles";
 import { motion } from "framer-motion";
-import foto from "../../assets/foto3.jpg";
+import foto from "../../assets/Especialistas-Ajudam-Identificar.jpg";
 
 function Experts() {
   return (

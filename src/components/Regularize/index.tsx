@@ -1,6 +1,6 @@
 import { Container, Section, Main, Img, Box } from "./styles";
 import { motion } from "framer-motion";
-import foto from "../../assets/foto 2.jpg";
+import foto from "../../assets/Regularize-Sua-Situação-Fiscal.jpg";
 function Regularize() {
   return (
     <Container>

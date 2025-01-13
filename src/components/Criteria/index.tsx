@@ -1,6 +1,6 @@
 import { Container, Main, Box } from "./styles";
 import { motion } from "framer-motion";
-import foto from "../../assets/foto4.jpg";
+import foto from "../../assets/Critérios-de-Monitoramento.jpg";
 
 function Criteria() {
   return (

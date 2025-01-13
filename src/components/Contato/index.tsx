@@ -67,6 +67,7 @@ function Contact() {
               href="https://api.whatsapp.com/send/?phone=5534997624502&text&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => fbq("track", "Contact")}
             >
               Falar com um Especialista
             </a>
@@ -100,7 +101,9 @@ function Contact() {
                 rows={4}
                 required
               ></textarea>
-              <button type="submit">Enviar</button>
+              <button onClick={() => fbq("track", "Lead")} type="submit">
+                Enviar
+              </button>
               {formStatus && <p>{formStatus}</p>}
             </form>
           </div>

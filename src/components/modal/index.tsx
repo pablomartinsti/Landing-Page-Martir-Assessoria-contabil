@@ -49,7 +49,9 @@ function Modal() {
           <input type="tel" id="phone" name="phone" required />
           <label htmlFor="message">Mensagem</label>
           <textarea id="message" name="message" rows={4} required></textarea>
-          <button type="submit">Enviar</button>
+          <button onClick={() => fbq("track", "Lead")} type="submit">
+            Enviar
+          </button>
           {formStatus && <p>{formStatus}</p>}
         </form>
       </div>

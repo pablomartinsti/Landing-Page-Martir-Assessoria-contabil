@@ -30,6 +30,7 @@ function Star() {
             href="https://api.whatsapp.com/send/?phone=5534997624502&text&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => fbq("track", "Contact")}
             initial={{ opacity: 0, y: 50, scale: 1 }}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{

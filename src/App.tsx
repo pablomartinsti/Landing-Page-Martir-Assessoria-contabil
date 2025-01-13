@@ -1,13 +1,13 @@
 import { Container } from "./styles";
 
 import Star from "./components/Start";
-import Oversight from "./components/Oversight";
-import Transactions from "./components/Transactions";
+import Oversight from "./components/NovaFiscalização";
+import Transactions from "./components/TransaçõesFinanceiras";
 import Regularize from "./components/Regularize";
-import Experts from "./components/Experts";
-import Criteria from "./components/Criteria";
-import Tips from "./components/Tips";
-import Contact from "./components/Contact";
+import Experts from "./components/NossosEspecialistas";
+import Criteria from "./components/NovosCritérios";
+import Tips from "./components/DicasEssenciais";
+import Contact from "./components/Contato";
 
 function App() {
   return (

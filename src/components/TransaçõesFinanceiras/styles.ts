@@ -8,7 +8,6 @@ export const Container = styled.div`
   img {
     width: 450px;
     height: auto;
-    margin: 50px 0;
     border-radius: 40px;
 
     /* Responsividade para imagens */
@@ -26,7 +25,8 @@ export const Main = styled.div`
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
+  gap: 50px;
+  margin: 50px 0;
 
   /* Ajuste para telas menores */
   @media (max-width: 1024px) {

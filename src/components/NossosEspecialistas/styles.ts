@@ -19,11 +19,12 @@ export const Main = styled.div`
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
+  margin: 50px 0;
+  gap: 50px;
 
   img {
     width: 450px;
     height: auto;
-    margin: 50px 0;
     border-radius: 40px;
 
     /* Responsividade para imagem */

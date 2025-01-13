@@ -87,6 +87,7 @@ export const Section = styled.div`
     }
     @media (max-width: 480px) {
       font-size: 14px;
+      width: 90%;
     }
   }
 

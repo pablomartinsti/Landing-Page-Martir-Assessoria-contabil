@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  @media (max-width: 1200px) {
+  @media (max-width: 1182px) {
     display: none;
   }
   .modal-content {
@@ -24,13 +24,9 @@ export const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-      padding: 20px; /* Reduz o padding em telas menores */
-      max-width: 100%; /* Ajusta a largura para caber na tela */
-      height: auto;
     }
 
     @media (max-width: 480px) {
-      padding: 15px; /* Ainda menor para celulares */
     }
   }
 
@@ -75,26 +71,9 @@ export const Container = styled.div`
     }
 
     @media (max-width: 768px) {
-      input,
-      textarea {
-        font-size: 14px; /* Reduz o tamanho da fonte dos campos */
-      }
-
-      button {
-        font-size: 16px; /* Botão menor para tablets */
-      }
     }
 
     @media (max-width: 480px) {
-      input,
-      textarea {
-        font-size: 12px; /* Ainda menor para celulares */
-      }
-
-      button {
-        font-size: 14px; /* Botão ajustado para telas menores */
-        padding: 8px; /* Reduz o padding */
-      }
     }
   }
 `;

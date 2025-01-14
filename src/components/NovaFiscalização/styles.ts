@@ -5,35 +5,32 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw;
-  padding: 100px 0;
 
   main {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
-    @media (max-width: 1200px) {
-      width: 80%;
-    }
+    max-width: 90%;
+    margin: 2rem 0;
 
     h1 {
-      font-size: 50px;
+      font-size: 3.1rem;
       line-height: 1.7;
       white-space: pre-line;
-      margin: 50px 0;
+      margin: 3.1rem 0;
     }
 
     .description {
       display: flex;
-      gap: 100px;
+      gap: 6.25rem;
 
       @media (max-width: 480px) {
         display: block;
       }
       p {
-        font-size: 20px;
+        font-size: 1.3rem;
         line-height: 2.5;
         font-weight: 400;
-        margin-bottom: 50px;
+        margin-bottom: 3.1rem;
       }
     }
   }

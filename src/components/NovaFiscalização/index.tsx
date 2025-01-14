@@ -19,8 +19,8 @@ function Oversight() {
         <div className="description">
           <div>
             <motion.p
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
               Em janeiro de 2025, a Receita Federal iniciou um monitoramento
@@ -31,8 +31,8 @@ function Oversight() {
           </div>
           <div>
             <motion.p
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               A nova fiscalização abrange um leque mais amplo de transações,

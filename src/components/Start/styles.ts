@@ -37,6 +37,7 @@ export const Box = styled.div`
     font-size: 2.3rem;
     white-space: pre-line;
     line-height: 1.7;
+    margin-top: -4rem;
 
     @media (max-width: 480px) {
       font-size: 1.9rem;

@@ -26,12 +26,12 @@ export const Main = styled.div`
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: start;
 
   h1 {
     color: #ffe14d;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     white-space: pre-line;
     line-height: 1.7;
 
@@ -42,10 +42,11 @@ export const Box = styled.div`
 
   h2 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.7;
     white-space: pre-line;
+    margin-top: -2rem;
   }
 
   a {
@@ -62,6 +63,7 @@ export const Box = styled.div`
     @media (max-width: 480px) {
       font-size: 1rem;
       padding: 1rem 1.3rem;
+      margin-top: -2rem;
     }
     &:hover {
       background-color: white;

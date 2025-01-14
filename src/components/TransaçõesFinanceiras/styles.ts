@@ -52,6 +52,7 @@ export const Section = styled.div`
 
   .box {
     display: flex;
+    margin-bottom: 1rem;
 
     @media (max-width: 1024px) {
       margin: 2rem 0;
@@ -59,6 +60,7 @@ export const Section = styled.div`
     /* Ajuste para telas menores */
     @media (max-width: 480px) {
       display: block;
+      margin-bottom: 0;
     }
   }
 

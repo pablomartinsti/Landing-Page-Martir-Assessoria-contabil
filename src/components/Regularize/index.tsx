@@ -10,7 +10,7 @@ function Regularize() {
       />
       <Section>
         <Main>
-          <div className="title">
+          <div>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}

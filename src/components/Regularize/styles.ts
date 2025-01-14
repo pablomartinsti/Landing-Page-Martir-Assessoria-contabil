@@ -3,49 +3,34 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 100vh;
 
   @media (max-width: 480px) {
-    min-height: 150vh;
+    min-height: 130vh;
   }
 `;
 
 export const Section = styled.div`
-  max-width: 1200px;
-
-  /* Ajuste para telas menores */
-  @media (max-width: 1024px) {
-    width: 90%;
-  }
+  width: 90%;
 `;
 
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100vh;
 
-  .title {
+  h1 {
     color: #ffe14d;
     text-align: start;
-    font-size: 30px;
+    font-size: 3.1rem;
+    margin: 3rem;
     white-space: pre-line;
     line-height: 1.7;
-
-    @media (max-width: 1200px) {
-      font-size: 24px;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      font-size: 24px;
-      text-align: center;
-    }
     @media (max-width: 480px) {
-      font-size: 14px;
-      margin-bottom: 50px;
+      font-size: 1.6rem;
     }
   }
 `;
@@ -54,51 +39,42 @@ export const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  margin: 2rem 0;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 
   .card {
-    width: 380px;
-    height: 380px;
+    width: 21rem;
+    height: 23rem;
     background: #46464a;
-    margin: 10px;
+    margin: 1rem;
     border-radius: 20px;
-    padding: 20px;
+    padding: 1rem;
     color: #d7d4cc;
 
-    @media (max-width: 1200px) {
-      width: 340px;
-      height: 360px;
-    }
     @media (max-width: 480px) {
-      width: 280px;
-      height: 250px;
+      height: 16rem;
     }
+
     h2 {
       font-weight: bold;
       line-height: 1.7;
-      margin-bottom: 22px;
+      margin-bottom: 1.3rem;
       text-decoration: underline;
 
-      /* Responsividade para subtítulos */
       @media (max-width: 768px) {
-        font-size: 18px;
-      }
-      @media (max-width: 480px) {
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
 
     h3 {
       font-weight: 300;
       line-height: 1.7;
-      font-size: 18px;
-
-      /* Responsividade para textos */
+      font-size: 1rem;
       @media (max-width: 768px) {
-        font-size: 14px;
-      }
-      @media (max-width: 480px) {
-        font-size: 12px;
+        font-size: 0.9rem;
       }
     }
   }
@@ -110,12 +86,7 @@ export const Img = styled.img`
   z-index: -1;
   position: absolute;
   filter: brightness(0.2);
-
-  /* Ajuste para telas menores */
-  @media (max-width: 768px) {
-    height: auto;
-  }
   @media (max-width: 480px) {
-    height: 150vh;
+    min-height: 130vh;
   }
 `;

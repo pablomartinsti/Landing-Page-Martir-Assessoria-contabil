@@ -1,13 +1,9 @@
-import { Container, Section, Main, Img, Box } from "./styles";
+import { Container, Section, Main, Box } from "./styles";
 import { motion } from "framer-motion";
-import foto from "../../assets/Regularize-Sua-Situação-Fiscal.jpg";
+
 function Regularize() {
   return (
     <Container>
-      <Img
-        src={foto}
-        alt="Pessoa analisando regularizar sua situação tributária"
-      />
       <Section>
         <Main>
           <div>

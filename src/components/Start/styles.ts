@@ -26,9 +26,12 @@ export const Main = styled.div`
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: start;
 
+  @media (max-width: 480px) {
+    justify-content: space-evenly;
+  }
   h1 {
     color: #ffe14d;
     font-size: 2.3rem;
@@ -60,6 +63,7 @@ export const Box = styled.div`
     color: black;
     transition: background-color 0.5s;
     max-width: 37rem;
+
     @media (max-width: 480px) {
       font-size: 1rem;
       padding: 1rem 1.3rem;

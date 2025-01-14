@@ -1,32 +1,49 @@
 import styled from "styled-components";
+import foto from "../../assets/Regularize-Sua-Situação-Fiscal.jpg";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  position: relative;
+  overflow: hidden;
 
-  @media (max-width: 480px) {
-    min-height: 130vh;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${foto}); /* Caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.2); /* Aplica o filtro apenas ao fundo */
+    z-index: -1; /* Mantém a imagem atrás do conteúdo */
   }
 `;
 
 export const Section = styled.div`
   width: 90%;
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  padding: 20px;
+  z-index: 1; /* Coloca o conteúdo acima do fundo */
 `;
 
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
+  align-items: start;
+  justify-content: center;
 
   h1 {
     color: #ffe14d;
     text-align: start;
     font-size: 3.1rem;
-    margin: 3rem;
+    margin: 5rem 0;
     white-space: pre-line;
     line-height: 1.7;
     @media (max-width: 480px) {
@@ -37,22 +54,26 @@ export const Main = styled.div`
 
 export const Box = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
+  width: 90%;
 
   @media (max-width: 480px) {
     flex-direction: column;
   }
 
   .card {
-    width: 21rem;
-    height: 23rem;
+    max-width: 23rem;
+    height: 20rem;
     background: #46464a;
-    margin: 0.5rem;
-    border-radius: 20px;
-    padding: 1rem;
+    margin: 10px;
+    border-radius: 1rem;
+    padding: 2rem;
     color: #d7d4cc;
+
+    @media (max-width: 1180px) {
+      padding: 1rem;
+    }
 
     @media (max-width: 480px) {
       height: 16rem;
@@ -61,11 +82,13 @@ export const Box = styled.div`
     h2 {
       font-weight: bold;
       line-height: 1.7;
+      font-size: 1.3rem;
       margin-bottom: 1.3rem;
       text-decoration: underline;
 
-      @media (max-width: 820px) {
+      @media (max-width: 1024px) {
         font-size: 1.1rem;
+        line-height: 1.5;
       }
     }
 
@@ -73,20 +96,10 @@ export const Box = styled.div`
       font-weight: 300;
       line-height: 1.7;
       font-size: 1rem;
-      @media (max-width: 768px) {
-        font-size: 0.9rem;
+      @media (max-width: 1024px) {
+        font-size: 0.8rem;
+        line-height: 1.5;
       }
     }
-  }
-`;
-
-export const Img = styled.img`
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  position: absolute;
-  filter: brightness(0.2);
-  @media (max-width: 480px) {
-    min-height: 130vh;
   }
 `;

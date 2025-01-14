@@ -1,97 +1,91 @@
 import styled from "styled-components";
+import foto from "../../assets/Dicas-Essenciais.jpg";
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
-  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
 
-  /* Ajuste para dispositivos menores */
-  @media (max-width: 768px) {
-    padding: 30px 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${foto}); /* Caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.2); /* Aplica o filtro apenas ao fundo */
+    z-index: -1; /* Mantém a imagem atrás do conteúdo */
   }
-`;
-
-export const Img = styled.img`
-  width: 100vw;
-  position: absolute;
-  z-index: -1;
-  filter: brightness(0.2);
-  min-height: 170vh;
 `;
 
 export const Main = styled.div`
-  width: 1200px;
-
-  /* Ajuste para dispositivos menores */
-  @media (max-width: 1024px) {
-    width: 90%;
-  }
+  width: 90%;
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center; /* Centraliza o conteúdo */
+  padding: 20px;
+  z-index: 2; /* Coloca o conteúdo acima do fundo */
 `;
 
 export const Box = styled.div`
   h1 {
-    margin: 50px 0;
-    font-size: 50px;
+    font-size: 3.1rem;
     color: #ffe14d;
     line-height: 1.5;
     text-align: center;
+    white-space: pre-line;
+    margin: 5rem 0;
 
-    /* Responsividade para o título */
-    @media (max-width: 768px) {
-      font-size: 40px;
+    /* Responsividade para cartões */
+    @media (max-width: 1180px) {
+      font-size: 2rem;
     }
     @media (max-width: 480px) {
-      font-size: 30px;
+      font-size: 1.4rem;
     }
   }
 
   .card {
-    margin: 20px 0;
-    width: auto;
+    margin: 2rem 0;
     border: 1px solid rgba(215, 212, 204, 0.5);
-    padding: 20px;
+    padding: 1rem;
     color: #d7d4cc;
-    border-radius: 30px;
+    border-radius: 2.5rem;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 
-    /* Responsividade para cartões */
-    @media (max-width: 768px) {
-      flex-direction: column;
-      gap: 10px;
-      padding: 15px;
+    @media (max-width: 1024px) {
+      padding: 0.6rem;
     }
+
     @media (max-width: 480px) {
-      padding: 10px;
+      padding: 1rem;
     }
 
     h2 {
-      margin: 10px 0;
-      font-size: 22px;
+      margin: 1rem 0;
+      font-size: 1.7rem;
       font-weight: bold;
 
-      /* Responsividade para subtítulos */
-      @media (max-width: 768px) {
-        font-size: 20px;
+      @media (max-width: 1180px) {
+        font-size: 1.4rem;
       }
       @media (max-width: 480px) {
-        font-size: 18px;
+        font-size: 1rem;
       }
     }
 
     h3 {
       font-weight: 300;
-      font-size: 18px;
-
-      /* Responsividade para textos */
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
+      font-size: 1rem;
       @media (max-width: 480px) {
-        font-size: 14px;
+        font-size: 0.8rem;
       }
     }
 
@@ -99,12 +93,11 @@ export const Box = styled.div`
       flex-shrink: 0;
       /* Ajuste de ícones */
       @media (max-width: 768px) {
-        width: 80px;
-        height: 80px;
+        max-width: 6rem;
+        max-height: 6rem;
       }
       @media (max-width: 480px) {
-        width: 60px;
-        height: 60px;
+        display: none;
       }
     }
   }

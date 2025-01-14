@@ -64,8 +64,8 @@ function Transactions() {
         </Section>
         <motion.img
           src={foto}
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 150 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, delay: 0.7 }}
           alt="Profissional analisando dados financeiros em um ambiente de escritório moderno"
         />

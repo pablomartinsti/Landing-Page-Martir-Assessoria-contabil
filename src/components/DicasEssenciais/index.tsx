@@ -1,12 +1,11 @@
-import { Container, Img, Main, Box } from "./styles";
+import { Container, Main, Box } from "./styles";
 import { motion } from "framer-motion";
-import foto from "../../assets/Dicas-Essenciais.jpg";
+
 import { AiFillCaretDown } from "react-icons/ai";
 
 function Tips() {
   return (
     <Container>
-      <Img src={foto} />
       <Main>
         <Box>
           <div>

@@ -6,55 +6,40 @@ export const Container = styled.div`
   align-items: center;
   width: 100vw;
   background-color: #27272b;
-  padding: 50px 0;
-
-  /* Responsividade para o container */
-  @media (max-width: 768px) {
-    padding: 30px 0;
-  }
 `;
 
 export const Main = styled.div`
-  max-width: 1200px;
+  width: 90%;
   display: flex;
-  padding: 100px 0;
-
-  gap: 40px;
+  justify-content: space-between;
+  margin: 5rem 0;
+  gap: 2.5rem;
 
   img {
-    width: 450px;
-    height: auto;
-    border-radius: 40px;
+    width: 40%;
+    border-radius: 2.5rem;
 
-    /* Responsividade para imagem */
-    @media (max-width: 768px) {
-      width: 300px;
-    }
-    @media (max-width: 480px) {
-      width: 80%;
+    @media (max-width: 1024px) {
+      width: 100%;
     }
   }
 
   h1 {
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
     color: #ffe14d;
     text-align: center;
-    font-size: 50px;
+    font-size: 3.1rem;
     line-height: 1.5;
     white-space: pre-line;
 
-    /* Responsividade para o título */
-    @media (max-width: 768px) {
-      font-size: 40px;
-    }
     @media (max-width: 480px) {
-      font-size: 30px;
+      font-size: 2rem;
     }
   }
 
   /* Ajuste de layout para telas menores */
   @media (max-width: 1024px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 `;
@@ -67,51 +52,34 @@ export const Box = styled.div`
   align-items: center;
 
   .card {
-    width: 560px;
-    height: 250px;
+    max-width: 40rem;
+    height: 16rem;
     border: 1px solid rgba(215, 212, 204, 0.5);
-    border-radius: 40px;
-    padding: 20px 10px;
+    border-radius: 2.5rem;
+    padding: 2rem;
     text-align: center;
     line-height: 1.7;
-    margin: 20px;
+    margin: 2rem;
 
-    /* Responsividade para cartões */
-    @media (max-width: 768px) {
-      width: 90%;
-      height: auto;
-      margin: 15px 0;
-    }
     @media (max-width: 480px) {
-      width: 87%;
+      padding: 0;
+      height: 18rem;
     }
 
     h2 {
       font-weight: bold;
-      font-size: 22px;
-      margin: 10px 0;
+      font-size: 1.4rem;
+      margin: 1rem 0;
       text-decoration: underline;
-
-      /* Responsividade para subtítulos */
-      @media (max-width: 768px) {
-        font-size: 20px;
-      }
-      @media (max-width: 480px) {
-        font-size: 18px;
-      }
     }
 
     h3 {
       font-weight: 300;
-      font-size: 18px;
-      margin: 20px 0;
+      font-size: 1rem;
+      margin: 1rem;
 
-      /* Responsividade para textos */
-      @media (max-width: 768px) {
-        font-size: 16px;
-      }
       @media (max-width: 480px) {
-        font-size: 14px;
+        font-size: 0.9rem;
       }
     }
   }

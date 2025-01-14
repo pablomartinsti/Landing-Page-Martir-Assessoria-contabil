@@ -8,6 +8,87 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
 
+  .main {
+    background-color: #27272b;
+    width: 90%;
+    padding: 50px;
+    border-radius: 30px;
+
+    /* Ajuste para dispositivos menores */
+    @media (max-width: 1024px) {
+      width: 90%;
+    }
+    @media (max-width: 768px) {
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: #ffe14d;
+      line-height: 1.5;
+
+      /* Ajuste para dispositivos menores */
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: #d7d4cc;
+      margin-top: 40px;
+
+      @media (max-width: 480px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .box-button {
+      display: flex;
+      gap: 20px;
+
+      /* Ajuste para dispositivos menores */
+      @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      a {
+        font-size: 1.3rem;
+        border-radius: 15px;
+        border: 2px solid white;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+        padding: 15px;
+        background-color: #ffe14d;
+        margin-top: 50px;
+        text-align: center;
+
+        /* Ajuste para dispositivos menores */
+        @media (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+
+      a:hover {
+        background-color: white;
+        border: 2px solid yellow;
+      }
+
+      a:active {
+        opacity: 0.7;
+        border: 2px solid black;
+      }
+    }
+  }
+
   /* Responsividade para o container principal */
   @media (max-width: 768px) {
     padding: 20px;
@@ -30,9 +111,9 @@ export const Container = styled.div`
   .modal-content {
     background: #fff;
     border: 2px solid #27272b;
-    padding: 40px;
-    border-radius: 8px;
-    max-width: 400px;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    max-width: 25rem;
     width: 100%;
     text-align: center;
     position: relative;
@@ -42,27 +123,27 @@ export const Container = styled.div`
 
     /* Ajuste para dispositivos menores */
     @media (max-width: 480px) {
-      padding: 20px;
+      padding: 1.2rem;
       width: 90%;
     }
 
     h2 {
-      margin: 20px 0;
+      margin: 1.2rem 0;
     }
   }
 
   .close-button {
     position: absolute;
-    top: 10px;
-    right: 30px;
+    top: 0.625rem;
+    right: 1.8rem;
     background: none;
     border: none;
-    font-size: 40px;
+    font-size: 2.5rem;
     cursor: pointer;
 
     /* Ajuste para dispositivos menores */
     @media (max-width: 480px) {
-      font-size: 30px;
+      font-size: 1.8rem;
     }
   }
 
@@ -86,6 +167,7 @@ export const Container = styled.div`
 
     textarea {
       font-size: 20px;
+      border: 1px solid black;
       padding: 10px 0 10px 10px;
 
       /* Ajuste para dispositivos menores */
@@ -108,89 +190,6 @@ export const Container = styled.div`
       @media (max-width: 480px) {
         font-size: 20px;
         padding: 10px;
-      }
-    }
-  }
-
-  .main {
-    background-color: #27272b;
-    width: 1200px;
-    padding: 50px;
-    border-radius: 30px;
-
-    /* Ajuste para dispositivos menores */
-    @media (max-width: 1024px) {
-      width: 90%;
-    }
-    @media (max-width: 768px) {
-      padding: 30px;
-    }
-
-    h1 {
-      font-size: 50px;
-      color: #ffe14d;
-      line-height: 1.5;
-
-      /* Ajuste para dispositivos menores */
-      @media (max-width: 768px) {
-        font-size: 40px;
-      }
-      @media (max-width: 480px) {
-        font-size: 30px;
-      }
-    }
-
-    h2 {
-      font-size: 25px;
-      font-weight: 300;
-      color: #d7d4cc;
-      margin-top: 40px;
-
-      /* Ajuste para dispositivos menores */
-      @media (max-width: 768px) {
-        font-size: 20px;
-      }
-    }
-
-    .box-button {
-      display: flex;
-      gap: 20px;
-
-      /* Ajuste para dispositivos menores */
-      @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-
-      a {
-        font-size: 25px;
-        border-radius: 15px;
-        border: 2px solid white;
-        cursor: pointer;
-        text-decoration: none;
-        color: black;
-        transition: 0.5s;
-        padding: 15px;
-        background-color: #ffe14d;
-        margin-top: 50px;
-        text-align: center;
-
-        /* Ajuste para dispositivos menores */
-        @media (max-width: 480px) {
-          font-size: 20px;
-          padding: 10px;
-        }
-      }
-
-      a:hover {
-        background-color: white;
-        border: 2px solid yellow;
-      }
-
-      a:active {
-        opacity: 0.7;
-        border: 2px solid black;
       }
     }
   }

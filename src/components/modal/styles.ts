@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  @media (max-width: 480px) {
-    width: 90%;
+  @media (max-width: 1200px) {
+    display: none;
   }
   .modal-content {
     background: #ffe14d;

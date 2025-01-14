@@ -33,7 +33,7 @@ export const Main = styled.div`
     white-space: pre-line;
 
     @media (max-width: 480px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 

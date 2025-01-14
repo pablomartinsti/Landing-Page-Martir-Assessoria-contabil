@@ -45,9 +45,10 @@ export const Box = styled.div`
     /* Responsividade para cartões */
     @media (max-width: 1180px) {
       font-size: 2rem;
+      text-align: start;
     }
     @media (max-width: 480px) {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -77,16 +78,14 @@ export const Box = styled.div`
         font-size: 1.4rem;
       }
       @media (max-width: 480px) {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        text-decoration: underline;
       }
     }
 
     h3 {
       font-weight: 300;
       font-size: 1rem;
-      @media (max-width: 480px) {
-        font-size: 0.8rem;
-      }
     }
 
     svg {

@@ -58,7 +58,7 @@ export const Section = styled.div`
     font-size: 3.1rem;
     white-space: pre-line;
     @media (max-width: 480px) {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -119,17 +119,12 @@ export const Section = styled.div`
     margin-bottom: 0.625rem;
 
     @media (max-width: 480px) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 
   h3 {
     font-weight: 300;
     font-size: 1rem;
-
-    /* Responsividade para textos */
-    @media (max-width: 480px) {
-      font-size: 0.825rem;
-    }
   }
 `;

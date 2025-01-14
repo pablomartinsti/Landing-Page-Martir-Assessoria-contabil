@@ -26,6 +26,7 @@ export const Container = styled.div`
       font-size: 50px;
       color: #ffe14d;
       line-height: 1.5;
+      white-space: pre-line;
 
       /* Ajuste para dispositivos menores */
       @media (max-width: 768px) {

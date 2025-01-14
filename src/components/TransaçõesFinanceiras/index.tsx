@@ -25,7 +25,7 @@ function Transactions() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <h2>Análise detalhada de transações</h2>.
+              <h2>Análise detalhada de transações</h2>
               <h3>
                 A Receita Federal está utilizando tecnologia avançada para
                 monitorar transações financeiras, identificando padrões

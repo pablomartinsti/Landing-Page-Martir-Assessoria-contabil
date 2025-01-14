@@ -53,8 +53,10 @@ function Contact() {
         transition={{ duration: 1 }}
       >
         <div>
-          <h1>Entre em Contato e Garanta Sua</h1>
-          <h1>Conformidade Fiscal</h1>
+          <h1>
+            Entre em Contato e Garanta Sua{"\n"}
+            Conformidade Fiscal
+          </h1>
 
           <h2>
             Entre em contato conosco para uma avaliação gratuita e descubra como

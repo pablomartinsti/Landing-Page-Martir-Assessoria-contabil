@@ -17,6 +17,10 @@ export const Container = styled.div`
       line-height: 1.7;
       white-space: pre-line;
       margin: 3.1rem 0;
+
+      @media (max-width: 480px) {
+        font-size: 1.8rem;
+      }
     }
 
     .description {

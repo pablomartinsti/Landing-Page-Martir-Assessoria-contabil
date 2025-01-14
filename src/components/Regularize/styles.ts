@@ -47,7 +47,7 @@ export const Main = styled.div`
     white-space: pre-line;
     line-height: 1.7;
     @media (max-width: 480px) {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 `;
@@ -97,7 +97,6 @@ export const Box = styled.div`
       line-height: 1.7;
       font-size: 1rem;
       @media (max-width: 1024px) {
-        font-size: 0.8rem;
         line-height: 1.5;
       }
     }

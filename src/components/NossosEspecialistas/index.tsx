@@ -1,4 +1,4 @@
-import { Container, Main, Box } from "./styles";
+import { Container, Main, Section } from "./styles";
 import { motion } from "framer-motion";
 import foto from "../../assets/Especialistas-Ajudam-Identificar.jpg";
 
@@ -6,7 +6,7 @@ function Experts() {
   return (
     <Container>
       <Main>
-        <Box>
+        <Section>
           <div>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -18,7 +18,7 @@ function Experts() {
               Resolver Problemas {"\n"}
             </motion.h1>
           </div>
-          <motion.div className="box-card">
+          <motion.div className="box">
             <motion.div
               className="card"
               initial={{ opacity: 0, y: 50 }}
@@ -45,7 +45,7 @@ function Experts() {
             </motion.div>
           </motion.div>
           <motion.div
-            className="card"
+            className="cards"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.6 }}
@@ -56,7 +56,7 @@ function Experts() {
               e defendendo seus interesses perante a Receita Federal.
             </h3>
           </motion.div>
-        </Box>
+        </Section>
         <motion.img
           src={foto}
           initial={{ opacity: 0, x: -50 }}

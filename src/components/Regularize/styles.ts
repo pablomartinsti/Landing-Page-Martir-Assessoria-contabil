@@ -49,7 +49,7 @@ export const Box = styled.div`
     width: 21rem;
     height: 23rem;
     background: #46464a;
-    margin: 1rem;
+    margin: 0.5rem;
     border-radius: 20px;
     padding: 1rem;
     color: #d7d4cc;
@@ -64,8 +64,8 @@ export const Box = styled.div`
       margin-bottom: 1.3rem;
       text-decoration: underline;
 
-      @media (max-width: 768px) {
-        font-size: 1rem;
+      @media (max-width: 820px) {
+        font-size: 1.1rem;
       }
     }
 
